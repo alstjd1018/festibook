@@ -25,7 +25,6 @@ window.onload = function() {
                 });
         });
 
-
     // Handle the form submission event to create a new comment
     document.querySelector("#reply-form").addEventListener("submit", function(e) {
         e.preventDefault();
