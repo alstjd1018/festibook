@@ -28,7 +28,7 @@ window.onload = function() {
         const creatorIdElem = document.querySelector(".creator-id");
 
         if (creatorIdElem) {
-            let creatorId = creatorIdElem.innerText;
+            let creatorId = creatorIdElem.textContent;
 
             if (memberId === creatorId || memberId === 'admin') {
                 // 웹페이지에 저장된 로컬스토리지의 member_id값과 creator_id가 일치하는 경우,
@@ -72,6 +72,7 @@ window.onload = function() {
         loginStatusNavItem.innerHTML = '<a href="/login" class="nav-link active">Login</a>';
     }
 };
+
 
 // 게시글 삭제 함수 정의
 function deleteBoard() {
